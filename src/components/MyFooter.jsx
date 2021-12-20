@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 const MyFooter = () => {
     return (
         <div className="px-5 py-4" style={{
-            backgroundColor: "rgb(249, 249, 249)",
+            backgroundColor: "rgb(218, 218, 218)",
         }}>
             <Col className="text-muted">
                 <Row style={{
