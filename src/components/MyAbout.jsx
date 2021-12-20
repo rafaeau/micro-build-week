@@ -11,7 +11,7 @@ export default function MyAbout() {
 
             <div>
                 <h2 className="about-sec pl-4 mt-4">Archives</h2>
-                <p className="pl-4 mb-0 mb-0"><a href="#">March 2014</a></p>
+                <p className="pl-4 mb-0"><a href="#">March 2014</a></p>
                 <p className="pl-4 mb-0"><a href="#">February 2014</a></p>
                 <p className="pl-4 mb-0"><a href="#">October 2014</a></p>
                 <p className="pl-4 mb-0"><a href="#">January 2014</a></p>
