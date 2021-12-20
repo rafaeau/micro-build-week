@@ -4,7 +4,7 @@ import Navbar from './Components/Navbar'
 function App() {
   return (
     <div className="App">
-      <Navbar categories={[`business`, `entertainment`, `general`, `health`, `science`, `sports`,` technology`]}/>
+      <Navbar categories={[`Business`, `Entertainment`, `General`, `Health`, `Science`, `Sports`,` Technology`]}/>
     </div>
   )
 }

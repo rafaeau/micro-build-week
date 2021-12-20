@@ -32,7 +32,7 @@ export default class Navbar extends Component{
                            <a className = 'text-muted' href=''>Subscribe</a> 
                         </div>
                         <div className="col-4" id='blog-header' style={{'fontFamily':'"Playfair Display", Georgia, "Times New Roman",serif', 'fontSize':'2.25rem'}}>
-                            LARGE
+                            The Strive Times
                         </div>
                         <div className="col-4">
                            <a href='#' className='text-muted'>
@@ -49,13 +49,17 @@ export default class Navbar extends Component{
                         
                     </div>
                     <hr />
-                    <div className="row flex-nowrap justify-content-between" id=''>
-                       {
-                           Object.values(this.props.categories).map((category)=>{
-                               return (<a class='p-2 text-muted'>{category}</a>)
-                           })
-                       }
+                    <div className="container">
+                        <div className="row flex-nowrap justify-content-between" id=''>
+                        {
+                            Object.values(this.props.categories).map((category)=>{
+                                return (<a class='p-2 text-muted ' >{category}</a>)
+                            })
+                        }
+                        </div>
                     </div>
+                   
+                    <hr />
                 </div>
             </>
         )
