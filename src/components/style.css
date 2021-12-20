@@ -12,3 +12,8 @@
 .text-sec>span{
     font-style:italic;
 }
+
+
+.outline-primary{
+    border-radius: 50%;
+}

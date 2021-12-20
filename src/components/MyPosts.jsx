@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { Button } from 'react-bootstrap'
+import './style.css'
 
 export default class MyPosts extends Component {
     render() {
@@ -14,6 +16,13 @@ export default class MyPosts extends Component {
 
 
                     <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
+                </div>
+
+
+
+                <div>
+                    <Button variant="outline-primary py-2 px-3 mr-3" style={{ borderRadius: "40px" }}>Older</Button>
+                    <Button variant="outline-secondary py-2 px-3" disabled style={{ borderRadius: "40px" }}>Newer</Button>
                 </div>
             </div>
         )
