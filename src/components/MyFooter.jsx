@@ -17,7 +17,7 @@ const MyFooter = () => {
                         color: "blue",
                     }}>Strive School</a>  by <a style={{
                         color: "blue",
-                    }}>Team 1</a></p>
+                    }}>Team 0</a></p>
 
                 </Row>
                 <Row style={{
