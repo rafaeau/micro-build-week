@@ -1,0 +1,13 @@
+.about-container{
+    background-color: rgb(249, 249, 249);
+
+}
+
+.about-sec{
+    font-style:italic;
+    font-family: initial;
+}
+
+.text-sec>span{
+    font-style:italic;
+}
