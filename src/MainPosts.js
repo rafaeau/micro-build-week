@@ -8,7 +8,7 @@ export default class MainPosts extends Component {
     render() {
         return (
             <Container fluid>
-                <Row>
+                <Row className="mt-5">
 
                     <Col md={8}>
                         <MyPosts />

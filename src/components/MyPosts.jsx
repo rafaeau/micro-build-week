@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { Button } from 'react-bootstrap'
 import './style.css'
 
+
+// 48fa8b968da1414895a50b68a45ab365
 export default class MyPosts extends Component {
     render() {
         return (
