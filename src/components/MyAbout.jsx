@@ -28,7 +28,7 @@ export default function MyAbout() {
                 <h3 className="about-sec pl-4 mt-4">Elsewhere</h3>
                 <p className="pl-4 mb-0"><a href="#">GitHub</a></p>
                 <p className="pl-4 mb-0"><a href="#">Twitter</a></p>
-                <p className="pl-4 mb-0"><a href="#">Facebook</a></p>
+                <p className="pl-4 mb-5"><a href="#">Facebook</a></p>
             </div>
         </div>
     )

@@ -14,10 +14,14 @@ export default class MyPosts extends Component {
                 </div>
                 <div>
                     <h1 className="mb-0 post-title" style={{ fontWeight: "bolder" }}>Sample blog post</h1>
-                    <p className="mb-2 text-muted">January 1, 2014 by <a href="#">Mark</a></p>
+                    <p className="mb-2 text-muted posted-date">January 1, 2014 by <a className="post-author" href="#">Mark</a></p>
 
 
-                    <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
+                    <p className="post-description">This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
+
+                    <hr></hr>
+
+                    <p className="post-content">This blog post shows a few different types of content that's supported and styled with Bootstrap.</p>
                 </div>
 
 
