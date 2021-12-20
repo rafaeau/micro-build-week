@@ -33,3 +33,10 @@
     transform: rotate(360deg);
   }
 }
+
+
+@media (max-width: 440px) {
+*{
+    overflow-x: hidden;
+}
+}

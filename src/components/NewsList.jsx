@@ -8,7 +8,7 @@ export default function NewsList() {
 
     useEffect(() => {
         const getArticles = async () => {
-            const response = await axios.get('https://newsapi.org/v2/everything?q=football&apiKey=48fa8b968da1414895a50b68a45ab365')
+            const response = await axios.get('https://newsapi.org/v2/everything?q=messi&apiKey=48fa8b968da1414895a50b68a45ab365')
             console.log(response)
             setArticles(response.data.articles)
         }
@@ -25,6 +25,7 @@ export default function NewsList() {
                         date={article.publishedAt}
                         author={article.author}
                         content={article.content}
+                        urlToImage={article.urlToImage}
                     />
                 )
             })}

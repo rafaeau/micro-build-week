@@ -24,3 +24,18 @@
     font-family: 'Playfair Display';
     font-size: 30px;
 }
+
+.img-description{
+    display: flex
+}
+
+@media (max-width: 440px) {
+    .img-description{
+    display: block;
+    flex-wrap: wrap;
+}
+.post-description{
+    padding-left: 0px !important;
+}
+
+}
