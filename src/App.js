@@ -1,11 +1,14 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
+import { Container } from 'react-bootstrap'
+import FeaturedPosts from './components/FeaturedPosts'
+
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+      <Container>
+        <FeaturedPosts/>
+      </Container>
   )
 }
 
