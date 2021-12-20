@@ -18,7 +18,7 @@ export default function NewsList() {
         <div>
             {articles.map(article => {
                 return (
-                    <NewsItem
+                    <NewsItem key={article.content}
                         title={article.title}
                         description={article.description}
                         url={article.url}

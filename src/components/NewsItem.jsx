@@ -14,7 +14,7 @@ export default function NewsItem({ title, description, url, date, author, conten
 
                 <hr></hr>
 
-                {/* <p className="post-content">{content}</p> */}
+                <p className="post-content">{content}</p>
             </div>
         </div>
     )
