@@ -13,7 +13,7 @@ export default class MyPosts extends Component {
                     <hr></hr>
                 </div>
                 <div>
-                    <h1 className="mb-0" style={{ fontWeight: "bolder" }}>Sample blog post</h1>
+                    <h1 className="mb-0 post-title" style={{ fontWeight: "bolder" }}>Sample blog post</h1>
                     <p className="mb-2 text-muted">January 1, 2014 by <a href="#">Mark</a></p>
 
 

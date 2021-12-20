@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,200&family=Lato&family=M+PLUS+1:wght@400;500;600;700;800&family=Outfit:wght@300&family=Playfair+Display:wght@700&family=Roboto+Slab:wght@400;500;800&family=Zen+Kurenaido&display=swap');
+
 .about-container{
     background-color: rgb(249, 249, 249);
 
@@ -16,4 +18,9 @@
 
 .outline-primary{
     border-radius: 50%;
+}
+
+.post-title{
+    font-family: 'Playfair Display';
+    font-size: 44px;
 }
