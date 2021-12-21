@@ -13,11 +13,8 @@ const MyFooter = () => {
                 }}>
                     <p style={{
                         textAlign: "center"
-                    }}>Blog template built for <a href="#" style={{
-                        color: "blue",
-                    }}>Strive School</a>  by <a style={{
-                        color: "blue",
-                    }}>Team 0</a></p>
+                    }}>Blog template built for <a href="#" style={{ color: "blue", }}>Strive School</a>  by
+                        <a style={{ color: "blue", }}>Team 0</a></p>
 
                 </Row>
                 <Row style={{
