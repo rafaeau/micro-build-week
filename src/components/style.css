@@ -42,5 +42,12 @@
 
 
 .single-news-list{
-    background: rgb(128, 127, 127);
+    background-color: rgb(230, 230, 230);
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 70%;
+    padding: 5%;
+    border-radius: 5px;
+    justify-content: center !important;
+    align-items: center;
 }
