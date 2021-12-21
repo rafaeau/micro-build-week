@@ -4,6 +4,7 @@ import { parseISO, format } from 'date-fns'
 export default function NewsItem({ title, description, url, date, author, content, urlToImage }) {
     return (
         <div className="ml-4">
+
             <div>
                 <h1 className="mb-0 post-title" style={{ fontWeight: "bolder" }}>{title}</h1>
 

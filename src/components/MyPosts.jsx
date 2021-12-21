@@ -7,7 +7,7 @@ import './style.css'
 export default class MyPosts extends Component {
     render() {
         return (
-            <div className="ml-4">
+            <div className="mx-5 single-news-list">
                 <div>
                     <h1 className="about-sec">From the Firehose</h1>
                     <hr></hr>
