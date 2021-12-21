@@ -2,7 +2,9 @@ import { Component } from 'react'
 
 class Jumbotron extends Component {
     state = {
+        loading: true,
         comments: []
+        
     }
 
     componentDidMount = async () => {
@@ -10,8 +12,10 @@ class Jumbotron extends Component {
             let response = await fetch("https://newsapi.org/v2/top-headlines?country=au&apiKey=f7c47b6922c6434eb7afbb73428ffb90")
             let comments = await response.json()
             this.setState({
-                comments: comments.articles
+                comments: comments.articles,
+                loading: false
             })
+
             console.log(this.state.comments)
             console.log(this.state.comments[3].content)
         }
@@ -20,20 +24,22 @@ class Jumbotron extends Component {
     }
 
     render() {
-        return(
-        this.state.comments.map(article => {
+       
         return (
-            <div key={article._id} className="jumbotron jumbotron-fluid">
+            <div className="jumbotron jumbotron-fluid">
+                
+               { this.state.loading ? "loading" : 
                 <div className="mx-5">
-                    <h1><i>{article.title}</i></h1>
+                    <h1><i>{this.state.comments[3].title}</i></h1>
                     <p>
-                    {article.content}
+                    <div dangerouslySetInnerHTML={{__html: this.state.comments[3].content}}></div>
                     </p>
                     <b>Continue reading...</b>
                 </div>
+                }
             </div>
-        )
-        })
+        
+       
         )
     }
 }
