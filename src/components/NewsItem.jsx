@@ -2,11 +2,9 @@ import React from 'react'
 import './style.css'
 
 export default function NewsItem({ title, description, url, date, author, content, urlToImage }) {
-    var singleNews = document.getElementById("single-list")
-    singleNews.classList.add("single-news-list")
     return (
         <>
-            <div className="ml-4" id='single-list' onClick={singleNews}>
+            <div className="ml-4" id='single-list'>
 
                 <div>
                     <h1 className="mb-0 post-title" style={{ fontWeight: "bolder" }}>{title}</h1>
