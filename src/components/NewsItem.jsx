@@ -12,15 +12,21 @@ export default function NewsItem({ title, description, url, date, author, conten
 
                 <div className="img-description pt-2">
                     <img style={{ width: "200px", objectFit: "cover" }} src={urlToImage}></img>
-                    <p className="post-description px-5">{description}</p>
+                    <div className="px-5 post-description" dangerouslySetInnerHTML={{ __html: description }}>
+
+                    </div>
+                    {/* <p className="post-description px-5">{description}</p> */}
                 </div>
 
 
 
 
-                <hr></hr>
 
-                <p className="post-content">{content}</p>
+                <hr></hr>
+                <div className="post-content" dangerouslySetInnerHTML={{ __html: content }}>
+
+                </div>
+                <hr></hr>
             </div>
         </div >
     )
