@@ -22,20 +22,20 @@ class SingleFeaturedPost extends Component {
 
     render() {
         return (
-            <div nameClass="row col-md-6">
+            <div nameClass="col-md-6">
                 <Card orientation="horizontal" nameClass="flex-md-row mb-4 box-shadow h-md-250">
-                    <Card.Body nameClass="col-8 d-flex flex-column align-items-start" style={{ display: "flex" }}>
-                        <div>
+                    <Card.Body nameClass="row d-flex flex-column align-items-start" style={{ display: "flex", justifyContent: "around" }}>
+                        <div nameClass="col-8">
                             <strong nameClass="d-inline-block mb-2 text-primary">World</strong>
                             <h3 nameClass="mb-0">
                                 <h2>Featured post</h2>
                             </h3>
-                            <div nameClass="mb-1 text-muted">Nov 12</div>
+                            <Card.Text muted>Nov 12</Card.Text>
                             <p nameClass="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
                             <a href="#">Continue reading</a>
                         </div>
-                        <div>
-                            <Card.Img width="200px" height="250px" nameClass="col-4 card-img-right flex-auto d-none d-md-block" src="http://placehold.it/200x250" />
+                        <div nameClass="col-4">
+                            <Card.Img width="150px" height="200px" nameClass="card-img-right flex-auto d-none d-md-block" src="http://placehold.it/200x150" />
                         </div>
                     </Card.Body>
 
