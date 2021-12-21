@@ -2,34 +2,29 @@
 //Categories -> Sefa
 //apikey = 87836ad8185b41b5bcf72d32081e2c63
 import {Component} from 'react'
-
 export default class Navbar extends Component{
-    
-    async componentDidMount(){
-        const url  = 'https://newsapi.org/v2/everything?q='+ this.props.Categories + '&from=2021-12-20&sortBy=popularity&apiKey=87836ad8185b41b5bcf72d32081e2c63'
-        try {
-            const response = await fetch(url,{
-                headers:{
-                    'content-type':'application/json',
-                }
-            })
-            if(response.ok){
-                const data = await response.json()
-                console.log(data)
-            }
-        } catch (error) {
-            console.log(error)
+        state={
+            category:this.props.categories[0]
         }
-    } 
-
-
+         componentDidUpdate= async () => {
+            try {
+                let response = await fetch("https://newsapi.org/v2/everything?q=" + this.state.category + "&from=2021-11-21&sortBy=publishedAt&apiKey=87836ad8185b41b5bcf72d32081e2c63")
+                let news = await response.json()
+                console.log(news)
+                
+            }
+            catch(err) {
+                console.log(err)
+            }
+        }
+       
     render(){
         return(
             <>
                 <div className="container mt-3">
-                    <div className ="row flex-nowrap justify-content-between align-items-center">
-                        <div className="col-4 pt-1 justify-content-start">
-                           <a className = 'text-muted' href=''>Subscribe</a> 
+                    <div className ="row flex-nowrap pl-0  align-items-center">
+                        <div className="col-4 pt-1 ">
+                           <a className = 'text-muted' href='' style={{paddingLeft:'0px', alignItems:'flex-start'}}>Subscribe</a> 
                         </div>
                         <div className="col-4" id='blog-header' style={{'fontFamily':'"Playfair Display", Georgia, "Times New Roman",serif', 'fontSize':'2.25rem'}}>
                             The Strive Times
@@ -46,22 +41,23 @@ export default class Navbar extends Component{
                                Sign up
                            </button>
                         </div>
-                        
                     </div>
                     <hr />
                     <div className="container">
                         <div className="row flex-nowrap justify-content-between" id=''>
                         {
                             Object.values(this.props.categories).map((category)=>{
-                                return (<a class='p-2 text-muted ' >{category}</a>)
+                                return (
+                                    <ul style={{listStyleType:'none', cursor:'pointer'}}>
+                                        <li onClick={()=>this.setState({category})} className='p-2 text-muted border-none'>{category}</li>
+                                    </ul>
+                                )
                             })
                         }
                         </div>
                     </div>
-                   
                     <hr />
                 </div>
             </>
         )
-    }
-}
+    }}
