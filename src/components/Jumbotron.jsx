@@ -20,17 +20,20 @@ class Jumbotron extends Component {
     }
 
     render() {
+        return(
+        this.state.comments.map(article => {
         return (
-            <div className="jumbotron jumbotron-fluid">
+            <div key={article._id} className="jumbotron jumbotron-fluid">
                 <div className="mx-5">
-                    <h1><i>Fluid jumbotron{/* {this.state.comments[3].title} */}</i></h1>
+                    <h1><i>{article.title}</i></h1>
                     <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit dignissimos blanditiis voluptas quos unde, earum illum in. Molestiae, consequuntur quas? Inventore nihil quasi nisi eum consequatur numquam ea vitae optio?
-                    {/* {this.state.comments[3].content} */}
+                    {article.content}
                     </p>
                     <b>Continue reading...</b>
                 </div>
             </div>
+        )
+        })
         )
     }
 }
