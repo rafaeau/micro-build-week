@@ -45,3 +45,28 @@
   text-align: start;
   border-radius: 5px;
 }
+
+#jumboTitle {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+#jumboContent {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.carousel-indicators > button {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  border-style: hidden;
+  width: 15px;
+  height: 15px;
+  background-color: rgb(202, 202, 202);
+}

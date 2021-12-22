@@ -4,7 +4,7 @@ class Jumbotron extends Component {
     state = {
         loading: true,
         comments: []
-        
+
     }
 
     componentDidMount = async () => {
@@ -20,26 +20,29 @@ class Jumbotron extends Component {
             console.log(this.state.comments[3].content)
         }
 
-        catch(err) {console.log(err)}
+        catch (err) { console.log(err) }
     }
 
     render() {
-       
+
         return (
             <div className="jumbotron jumbotron-fluid">
-                
-               { this.state.loading ? "loading" : 
-                <div className="mx-5">
-                    <h1><i>{this.state.comments[3].title}</i></h1>
-                    <p>
-                    <div dangerouslySetInnerHTML={{__html: this.state.comments[3].content}}></div>
-                    </p>
-                    <b>Continue reading...</b>
-                </div>
+
+                {this.state.loading ? "loading" :
+                    <>
+                        <div className="col-6 ml-5 my-n4">
+                            <h1 id="jumboTitle"><i><b>{this.state.comments[this.props.article].title}</b></i></h1>
+                            
+                            <div id="jumboContent" dangerouslySetInnerHTML={{ __html: this.state.comments[this.props.article].content }}></div>
+                            
+                            <p className='pt-3'><b>Continue reading...</b></p>
+                        </div>
+                        <div className="col-6"></div>
+                    </>
                 }
             </div>
-        
-       
+
+
         )
     }
 }

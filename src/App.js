@@ -1,15 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
-import Jumbotron from './components/Jumbotron'
+import Carousel from './components/Carousel'
 import { Container } from 'react-bootstrap'
 
 function App() {
   return (
-    <div className="App">
       <Container>
-        <Jumbotron/>
+        <Carousel/>
       </Container>
-    </div>
   )
 }
 
