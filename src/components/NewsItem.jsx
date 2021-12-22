@@ -62,17 +62,15 @@ export default function NewsItem({ title, description, url, date, author, conten
                 </div>
 
                 <hr></hr>
-                <div className="post-content" dangerouslySetInnerHTML={{ __html: content }}>
-
-                </div>
-                <hr></hr>
                 <ReadMoreReact
                     text={content}
-                    min={200}
-                    ideal={250}
-                    max={300}
+                    // min={}
+                    // ideal={250}
+                    // max={300}
                     readMoreText="Read more"
                 />
+                <hr></hr>
+
                 {/* <p className="post-content">{content}</p> */}
             </div>
         </div >
