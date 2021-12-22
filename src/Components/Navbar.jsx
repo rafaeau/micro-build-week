@@ -16,13 +16,14 @@ class Navbar extends Component{
                         <div className="col-4" id='blog-header' style={{'fontFamily':'"Playfair Display", Georgia, "Times New Roman",serif', 'fontSize':'2.25rem'}}>
                             The Strive Times
                         </div>
-                        <div className="col-4">
+                        <div className="col-4 d-flex">
                            <div>{<Search />} </div>
                            <button className='btn btn-sm btn-outline-secondary ml-auto'>
                                Sign up
                            </button>
                         </div>
                     </div>
+                    <hr/>
                 </div>
             </>
         )
