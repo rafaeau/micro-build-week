@@ -1,6 +1,3 @@
-.App {
-  text-align: center;
-}
 
 .App-logo {
   height: 40vmin;
@@ -37,43 +34,9 @@
   }
 }
 
-.jumbotron {
-  background-color: rgb(52,58,64);
-  margin-top: 10px;
-  margin-bottom: 10px;
-  color: white;
-  text-align: start;
-  border-radius: 5px;
-}
 
-#jumboTitle {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+@media (max-width: 440px) {
+*{
+    overflow-x: hidden;
 }
-
-#featuredTitle {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-#jumboContent, #featuredContent {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.carousel-indicators > button {
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-bottom: 20px;
-  border-radius: 50%;
-  border-style: hidden;
-  width: 15px;
-  height: 15px;
-  background-color: rgb(202, 202, 202);
 }

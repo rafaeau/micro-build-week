@@ -1,15 +1,15 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
-import { Container } from 'react-bootstrap'
-import Carousel from './components/Carousel'
-import FeaturedPosts from './components/FeaturedPosts'
+import MyFooter from './components/MyFooter'
+import MainPosts from './MainPosts'
+
 
 function App() {
   return (
-      <Container>
-        <Carousel/>
-        <FeaturedPosts/>
-      </Container>
+    <div className="App">
+      <MainPosts />
+      <MyFooter />
+    </div>
   )
 }
 
