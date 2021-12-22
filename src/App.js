@@ -5,6 +5,9 @@ import MainPosts from './MainPosts'
 import { Container } from 'react-bootstrap'
 import Carousel from './components/Carousel'
 import FeaturedPosts from './components/FeaturedPosts'
+import SpotifyWebApi from 'spotify-web-api-js'
+
+const spotify = SpotifyWebApi();
 
 
 
