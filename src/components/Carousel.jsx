@@ -5,7 +5,7 @@ function displayCarousel() {
   return (
     <Carousel controls={false}>
       <Carousel.Item>
-        <Jumbotron article="5" />
+        <Jumbotron article="8" />
       </Carousel.Item>
       <Carousel.Item>
         <Jumbotron article="4" />
