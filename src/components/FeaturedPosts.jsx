@@ -7,7 +7,7 @@ const FeaturedPosts = () => {
                 <SingleFeaturedPost article="19" region="World" color="rgb(0,123,255)" />
             </div>
             <div>
-                <SingleFeaturedPost article="6" region="Australia" color="rgb(40,167,69)" />
+                <SingleFeaturedPost article="1" region="Australia" color="rgb(40,167,69)" />
             </div>
         </div>
     )
