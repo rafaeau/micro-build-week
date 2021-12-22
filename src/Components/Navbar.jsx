@@ -6,7 +6,6 @@ import Search from './Search'
 export default class Navbar extends Component{
         state={
             category:this.props.categories[0],
-            
         }
 
         componentDidUpdate= async () => {

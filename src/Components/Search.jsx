@@ -10,7 +10,7 @@ function Search() {
   const targetRef = useRef(null); //initial value
   const [isHovered, setIsHovered] = useState(false);
   const [isFocused, setIsFocused] = useState(false);
- // const [isTyped, setIsTyped] = useState('')
+  const [isTyped, setIsTyped] = useState('')
   const showSearchInput = isHovered || isFocused;
 
   useEffect(() => {
@@ -19,11 +19,11 @@ function Search() {
 
   return (
     <Container
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-      onFocus={() => setIsFocused(true)}
-      onBlur={() => setIsFocused(false)}
-      //onChange={()=>setIsTyped(targetRef)} not displayin changing value
+      onMouseEnter={() => setIsHovered(true)}   //with mouse hover it shows search area
+      onMouseLeave={() => setIsHovered(false)}  // when mouse leave search icon its closing searchin area
+      onFocus={() => setIsFocused(true)}        // make the search input area persistence when you click on it
+      onBlur={() => setIsFocused(false)}        //closing search input area after clicking anywhere else
+      onChange={()=>setIsTyped(targetRef.current.value)} // displaying changing value
       hover={showSearchInput}
     >
       <SearchInput ref={targetRef} showSearchInput={showSearchInput} />
