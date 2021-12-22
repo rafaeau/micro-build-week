@@ -18,12 +18,8 @@ export default function NewsItem({ title, description, url, date, author, conten
                     {/* <p className="post-description px-5">{description}</p> */}
                 </div>
 
-
-
-
-
                 <hr></hr>
-                <div className="post-content" dangerouslySetInnerHTML={{ __html: content }}>
+                <div className="post-content" dangerouslySetInnerHTML={{ __html: content.substring(0, content.length - 14) }}>
 
                 </div>
                 <hr></hr>
