@@ -30,14 +30,14 @@ class Jumbotron extends Component {
 
                 {this.state.loading ? "loading" :
                     <div className='d-flex'>
-                        <div className="col-6">
+                        <div className="col-6 ml-3">
                             <h1 id="jumboTitle"><i><b>{this.state.comments[this.props.article].title}</b></i></h1>
                             
                             <div id="jumboContent" dangerouslySetInnerHTML={{ __html: this.state.comments[this.props.article].content }}></div>
                             
                             <p className='pt-3'><b>Continue reading...</b></p>
                         </div>
-                        <div className="col-6">
+                        <div className="col-6 mr-3">
                         <img className="card-img-right flex-auto d-none d-lg-block"
                                 alt="Thumbnail"
                                 style={{ width: '525px', height: '250px', objectFit: 'cover' }}
