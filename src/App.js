@@ -13,6 +13,7 @@ function App() {
       <Container>
          <Navbar  />
          <Header categories={[`Business`, `Entertainment`, `General`, `Health`, `Science`, `Sports`,` Technology`]} />
+         <hr/>
         <Carousel/>
         <FeaturedPosts/>
       </Container>
