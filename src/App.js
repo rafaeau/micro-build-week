@@ -1,25 +1,24 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
+import { Container } from 'react-bootstrap'
 import MyFooter from './components/MyFooter'
 import MainPosts from './MainPosts'
-import { Container } from 'react-bootstrap'
 import Carousel from './components/Carousel'
 import FeaturedPosts from './components/FeaturedPosts'
-import SpotifyWebApi from 'spotify-web-api-js'
-
-const spotify = SpotifyWebApi();
 
 
 
+import Navbar from './components/Navbar'
 
 function App() {
   return (
     <>
       <Container>
+        <Navbar categories={[`business`, `entertainment`, `general`, `health`, `science`, `sports`, ` technology`]} />
         <Carousel />
         <FeaturedPosts />
+        <MainPosts />
       </Container>
-      <MainPosts />
       <MyFooter />
     </>
   )
