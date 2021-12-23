@@ -23,8 +23,8 @@ export const Container = styled.div
     hover &&
     css`
       width: 50%;
-      -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.74);
-      box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.74);
+      -webkit-box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.74);
+      box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.74);
       border: 1px solid #00adb5;
 
       @media (min-width: 768px) {
