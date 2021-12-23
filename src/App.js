@@ -17,8 +17,8 @@ function App() {
         <Navbar categories={[`business`, `entertainment`, `general`, `health`, `science`, `sports`, ` technology`]} />
         <Carousel />
         <FeaturedPosts />
-        <MainPosts />
       </Container>
+      <MainPosts />
       <MyFooter />
     </>
   )
