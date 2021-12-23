@@ -9,12 +9,14 @@ import FeaturedPosts from './components/FeaturedPosts'
 
 
 import Navbar from './components/Navbar'
-
+import Header from './components/Header'
 function App() {
   return (
     <>
       <Container>
-        <Navbar categories={[`business`, `entertainment`, `general`, `health`, `science`, `sports`, ` technology`]} />
+        <Navbar  />
+        <Header categories={[`Business`, `Entertainment`, `General`, `Health`, `Science`, `Sports`, `Technology`]}/>
+        <hr />
         <Carousel />
         <FeaturedPosts />
       </Container>

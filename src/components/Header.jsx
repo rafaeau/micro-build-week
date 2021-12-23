@@ -1,4 +1,5 @@
 import { Component } from "react";
+import SingleFeaturedPost from "./SingleFeaturedPost";
 
 
 class Header extends Component{
@@ -32,7 +33,10 @@ class Header extends Component{
                             })
                         }
                         </div>
-                    </div>
+                        <div>
+                            <SingleFeaturedPost category = {this.state.category}/> {/* for State lifting */}
+                        </div>
+            </div>
         )
     }
 }
